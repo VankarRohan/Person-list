@@ -1,0 +1,23 @@
+<div ng-controller="myCtrl">
+    <button ng-click="order='name'" margin="5px">Order by name</button>
+    <button ng-click="order='color'" margin="5px">Order by color</button
+    ><br />
+    <input type="text" ng-model="search" placeholder="Search for person" />
+    <ul>
+      <li
+        ng-repeat="person in persons | filter : search | orderBy : order "
+        ng-show="person.available"
+      >
+        <h3>{{person.name}} - {{person.rate | currency}}</h3>
+        <h3><div class="remove" ng-click="removePerson(person)">×</div></h3>
+        <span class="color" style="background: {{person.color}}"
+          >{{person.color}}</span>
+      </li>
+    </ul>
+    <form ng-submit="addPerson()" margin="20px">
+      <input type="text" placeholder="name" ng-model="newperson.name" />
+      <input type="text" placeholder="color" ng-model="newperson.color" />
+      <input type="text" placeholder="rate" ng-model="newperson.rate" />
+      <input type="submit" value="Add new person" />
+    </form>
+  </div>

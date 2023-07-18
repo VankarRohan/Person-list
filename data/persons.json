@@ -1,0 +1,24 @@
+[{
+        "name": "Rohan",
+        "color": "grey",
+        "rate": "10000",
+        "available": true
+    },
+    {
+        "name": "Shailesh",
+        "color": "green",
+        "rate": "10000",
+        "available": true
+    },
+    {
+        "name": "Ravi",
+        "color": "blue",
+        "rate": "10000",
+        "available": false
+    },
+    {
+        "name": "Milan",
+        "color": "yellow",
+        "rate": "10000",
+        "available": true
+    }]
